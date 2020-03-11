@@ -1,0 +1,49 @@
+  public static String [][] dataBeach = new String[][]{
+            {"Seger Beach",
+                    "Bali, Indonesia",
+"https://raw.githubusercontent.com/AdhimBagas/TravelAppResource/master/3b5c90dc1dce736098181da7b2dac01d.jpg",
+                    "$105",
+                    "Pantai Seger masih satu kawasan dengan wisata Mandalika di Lombok Tengah dan satu garis pantai dengan Pantai Kuta Lombok. Di pantai ini, para wisatawan dapat menikmati keindahannya dengan berduduk-duduk santai sambil menikmati sunset atau sunrise. Selain itu, Anda juga dapat mendaki bukit untuk menikmati pemandangan sepanjang bibir pantai dengan nyaman."},
+            {"Pacitan Beach",
+                    "Solo, Indonesia",
+                    "https://raw.githubusercontent.com/AdhimBagas/TravelAppResource/master/42269fb0a01ed15e9c6c61832a39867c.jpg",
+                    "$210",
+                    "Pacitan Regency regional is 1389,87 Km width, which condition of physical nature is mostly consisted of hilly that is about 85 % in form of small mounts.
+Pacitan Regency is located in Java Island South Coast and abut on Central Java Province and Yogyakarta special region. It is also the gateway to West Java with physical mountain condition of lengthwise chalk from mount kidul to Trenggalek faced to Indonesian Ocean.
+Visit Pacitan's tourism object, such as; Teleng Ria Beach, Srau Beach, Klayar Beach, Sidomulyo Beach, Gong Cave, Tabuhan Cave, Banyu Anget Pool, Ceprotan Ceremony, etc."},
+            {"Sigandu Beach",
+                    "Batang, Indonesia",
+                    "https://raw.githubusercontent.com/AdhimBagas/TravelAppResource/master/478c67a410ac09b411d3d0bf583d50d9.jpg",
+                    "$50",
+                    "Sigandu Beach is one of the tourist attractions that located in the village of Kidung Lor, Batang District, Central Java. Sigandu Beach in Batang, Central Java is a bustling tourist spot with many tourists on weekdays and holidays. This place is very beautiful and this beach can provide a different sensation with daily activities. Sigandu Beach is only about 4 km from Batang Square or 2 km north of Batang Town. In addition to the beach, around the area, there is also a Safari Park with name "Batang Dolphins Center". In this place, tourist can play with dolphin.
+
+The facilities of this beach tourism are also quite complete. In addition to enjoying a clean beach atmosphere and fun on this beach, we can also see the activities of fishermen who live around this beach when doing fish auctions. In this beach, there is also a dock where the fishing boats are docked. The best time to come Sigandu Beach is in the afternoon, because we can see the beautiful sunset scenery."},
+            {"Marina Beach",
+                    "Batam, Indonesia",
+                    "https://raw.githubusercontent.com/AdhimBagas/TravelAppResource/master/5bd026fb2a5b6209e6836eb397603178.jpg",
+                    "$75.",
+                    "Marina beach is one of the most famous resorts in Batam. Located in the western part of Batam Island, Marina beach is not only includes a tourist area, but also a place for the ferry docked. In addition to beautiful scenery, the beach is also has a green garden suitable for children's playground. At this location there are also many food vendors so you do not have to bring lunch from home. There are also hotel from the inexpensive to the top class for those who want to stay overnight. The admission price is a suitable place for family travel, which is about Rp. 6,000 for adults to Rp. 3,000 for children."},
+            {"Kartini, Beach",
+                    "Jepara, Indonesia",
+                    "https://raw.githubusercontent.com/AdhimBagas/TravelAppResource/master/674ca652ef9dd1ccaa9851f482f6f62a.jpg",
+                    "$175”,
+                    "he beauty of Kartini beach tourism in Jepara, Central Java – Jepara city known Kartini city because the city of Jepara is the hometown hero of Raden Ajeng Kartini rich in tourist beauty and natural charm. Jepara city has many tourist attractions that attract the tourists to visit this town, and among the tourist attractions in the form of beautiful nature. There is a tourist place in the city of Jepara occupying the top level with the visitors so much namely Kartini beach tourist attraction. Kartini Beach is located about 2 kilometers from the city center Jepara. Address precisely located in the village of Bulu, subdistrict of Jepara, Jepara, Central Java province. Do not be mistaken with Kartini beach in Rembang. If in Rembang, its name is Kartini Park despite also located near the beach
+On the Kartini beach there are a lot of beauty and buildings such as stage building which is used as a place for concert bands. There was also a building in the form of a giant turtle, dubbed by Turtle Ocean Park. This building consists of two floors, the first floor contains a giant aquarium while on the second floor there is a 3D audio-visual equipment. To enter the Turtle Ocean Park, you pay entrance fee IDR 5,000/person on weekdays and on holidays you have to pay IDR 17,500/person. You can see the Kartini beach from behind the building of the giant turtle. Interesting is not it? This place is perfect for your vacation spot and the place is also very good for photo hunting. But you have to queue up to get a nice photo and beautiful scenery, because many of the visitors who want to pose or take a nice background
+    };
+
+    public static ArrayList<Event> getListData(){
+        Event event;
+        ArrayList<Event> list = new ArrayList<>();
+
+        for ( String[] data : dataEvent){
+            event = new Event();
+            event.setName(data[0]);
+            event.setContributor(data[1]);
+            event.setPhoto(data[2]);
+            event.setDescription(data[3]);
+            event.setLocation(data[4]);
+
+            list.add(event);
+        }
+        return list;
+    }
